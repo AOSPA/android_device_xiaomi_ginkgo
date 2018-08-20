@@ -12,7 +12,8 @@ $(call inherit-product, vendor/xiaomi/ginkgo/ginkgo-vendor.mk)
 PRODUCT_PACKAGES += \
     GinkgoFrameworks \
     GinkgoMiuiCamera \
-    GinkgoSystemUI
+    GinkgoSystemUI \
+    NoCutoutOverlay
 
 # Audio
 PRODUCT_PACKAGES += \

@@ -19,6 +19,9 @@ TARGET_OTA_ASSERT_DEVICE := ginkgo,willow
 # Display
 TARGET_SCREEN_DENSITY := 440
 
+# DT2W
+TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
+
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 ODM_MANIFEST_WILLOW_FILES := $(DEVICE_PATH)/configs/hidl/manifest_willow.xml

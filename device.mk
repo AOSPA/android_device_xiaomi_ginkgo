@@ -84,10 +84,7 @@ PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
     libdng_sdk.vendor
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/releasetools/anx_config.sh:install/bin/anx_config.sh
-
-$(call inherit-product, vendor/ANXCamera/config.mk)
+$(call inherit-product-if-exists, vendor/aeonax/ANXCamera/anx-vendor.mk)
 
 # Context Hub
 PRODUCT_PACKAGES += \

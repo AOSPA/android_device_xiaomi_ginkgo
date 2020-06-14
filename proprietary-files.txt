@@ -1376,9 +1376,6 @@ vendor/lib/libmmcamera_ginkgo_s5kgm1_ofilm_ii_eeprom.so
 vendor/lib/libmmcamera_ginkgo_s5kgm1_sunny_i_eeprom.so
 vendor/lib/libmmcamera_ginkgo_s5kgm1_sunny_i.so
 
-# Camera service shim
-lib/libshim_cameraservice.so
-
 # Camera watermark - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/lib/libdng_sdkvendor.so|a198809faa5f630d3f4debaa8b045ccc7ed935fe
 vendor/lib/libft2vendor.so|1332ed2141660b9372c959ca1155575c25a73751

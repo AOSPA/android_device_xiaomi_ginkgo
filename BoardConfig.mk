@@ -60,6 +60,8 @@ TARGET_USE_QTI_BT_STACK := true
 TARGET_USES_QTI_CAMERA_DEVICE := true
 USE_DEVICE_SPECIFIC_CAMERA := true
 
+-include vendor/aeonax/ANXCamera/BoardConfigAnx.mk
+
 # Charger Mode
 BOARD_CHARGER_ENABLE_SUSPEND := true
 TARGET_USES_AOSP_CHARGER := true

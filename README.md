@@ -1,4 +1,4 @@
-# Unified Device Tree for Redmi Note 8/8T (ginkgo/willow)
+ # Unified Device Tree for Redmi Note 8/8T (ginkgo/willow)
 
 The Redmi Note 8 (codenamed "ginkgo") is a mid-range smartphone from Xiaomi. It was announced in August 2019 and released in October 2019.
 

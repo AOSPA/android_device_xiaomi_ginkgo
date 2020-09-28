@@ -16,10 +16,6 @@ TARGET_PROVIDES_AUDIO_EXTNS := true
 # Assert
 TARGET_OTA_ASSERT_DEVICE := ginkgo,willow
 
-# Charger
-TARGET_USES_AOSP_CHARGER := true
-BOARD_HEALTHD_CUSTOM_CHARGER_RES := $(DEVICE_PATH)/charger/images
-
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 ODM_MANIFEST_WILLOW_FILES := $(DEVICE_PATH)/configs/hidl/manifest_willow.xml

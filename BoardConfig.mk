@@ -26,8 +26,8 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_ginkgo
 TARGET_RECOVERY_DEVICE_MODULES := libinit_ginkgo
 
 # Kernel
+KERNEL_DEFCONFIG := vendor/ginkgo-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/ginkgo
-TARGET_KERNEL_CONFIG := vendor/ginkgo-perf_defconfig
 
 # NFC
 TARGET_USES_NQ_NFC := true

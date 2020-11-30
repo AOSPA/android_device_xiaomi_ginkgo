@@ -9,9 +9,18 @@
 -include device/xiaomi/trinket-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/ginkgo
+BUILD_BROKEN_DUP_RULES := true
 
 # Audio
+AUDIO_FEATURE_ENABLED_COMPRESS_VOIP := true
+AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
+AUDIO_FEATURE_ENABLED_EXTN_FORMATS := true
+AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
+AUDIO_FEATURE_ENABLED_HDMI_SPK := true
+AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
 TARGET_PROVIDES_AUDIO_EXTNS := true
+USE_CUSTOM_AUDIO_POLICY := 1
+USE_XML_AUDIO_POLICY_CONF := 1
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := ginkgo,willow
@@ -34,6 +43,7 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_ginkgo
 # Kernel
 KERNEL_DEFCONFIG := vendor/pa_ginkgo-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/ginkgo
+TARGET_KERNEL_APPEND_DTB := true
 
 # NFC
 TARGET_USES_NQ_NFC := true
@@ -56,13 +66,12 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.qcom
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # Sepolicy
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Inherit from the proprietary version

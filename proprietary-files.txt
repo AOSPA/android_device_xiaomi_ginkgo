@@ -1,4 +1,4 @@
-# Device proprietary files - from ginkgo MIUI V12.0.1.0.QCOMIXM China Beta package, unless pinned
+# Device proprietary files - from ginkgo MIUI V12.0.2.0.QCOMIXM China Stable package, unless pinned
 
 # ADSP modules
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
@@ -1281,16 +1281,6 @@ vendor/lib/libmmcamera_ginkgo_s5kgm1_ofilm_ii_eeprom.so
 vendor/lib/libmmcamera_ginkgo_s5kgm1_sunny_i.so
 vendor/lib/libmmcamera_ginkgo_s5kgm1_sunny_i_eeprom.so
 
-# CDSP
-vendor/bin/cdsprpcd
-vendor/lib/libcdsprpc.so
-vendor/lib/libcdsp_default_listener.so
-vendor/lib64/libcdsprpc.so
-vendor/lib64/libcdsp_default_listener.so
-
-# Charger - from miui_CMI_20.9.28_171a6c0851_11.0.zip
-bin/charger|c745c3febb01b2b6a868a30ddb7bd8c1c343b3e7
-
 # Display calibration
 vendor/etc/qdcm_calib_data_ft8719_video_mode_dsi_huaxing_panel.xml
 vendor/etc/qdcm_calib_data_nt36672a_video_mode_dsi_shenchao_panel.xml
@@ -1336,38 +1326,8 @@ vendor/firmware/ipa_fws.elf
 # IR
 vendor/lib64/hw/consumerir.default.so
 
-# Listen
-vendor/lib/libadpcmdec.so
-vendor/lib/libgcs-calwrapper.so
-vendor/lib/libgcs-ipc.so
-vendor/lib/libgcs-osal.so
-vendor/lib/libgcs.so
-vendor/lib/liblistensoundmodel2.so
-vendor/lib64/libgcs-calwrapper.so
-vendor/lib64/libgcs-ipc.so
-vendor/lib64/libgcs-osal.so
-vendor/lib64/libgcs.so
-vendor/lib64/liblistensoundmodel2.so
-
-# Listen - Hardware
-vendor/lib/hw/sound_trigger.primary.trinket.so
-vendor/lib/libcapiv2svacnn.so
-vendor/lib/libcapiv2vop.so
-vendor/lib/libsmwrapper.so
-vendor/lib64/hw/sound_trigger.primary.trinket.so
-vendor/lib64/libcapiv2svacnn.so
-vendor/lib64/libcapiv2vop.so
-
-# Mlipay
-vendor/bin/mlipayd@1.1
-vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
-vendor/lib64/libmlipay@1.1.so
-vendor/lib64/libmlipay.so
-vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so
-
-# NFC - from LA.UM.9.11.r1-02100-NICOBAR.0
-vendor/bin/nqnfcinfo|383844eea1225e99edf4e31bf58ed62ac38dda50
+# NFC - from LA.UM.9.11.r1-02200-NICOBAR.0
+vendor/bin/nqnfcinfo|27ac08e5a75a9e8ec57eeb2fb6ca5bc9995d3134
 vendor/lib/libsn100u_fw.so|987e60b447aa289402bfe120591b8ab9b5e4454e
 
 # Sensors
@@ -1466,12 +1426,3 @@ vendor/etc/sensors/config/stk3x3x_0.json
 vendor/etc/sensors/config/sx932x_0.json
 vendor/etc/sensors/config/tmd2725.json
 vendor/etc/sensors/config/tmx4903.json
-
-# Thermal
-vendor/bin/thermal-engine
-vendor/lib/hw/thermal.trinket.so
-vendor/lib/libthermalclient.so
-vendor/lib/libthermalfeature.so
-vendor/lib64/hw/thermal.trinket.so
-vendor/lib64/libthermalclient.so
-vendor/lib64/libthermalfeature.so

@@ -1371,6 +1371,28 @@ vendor/firmware/ipa_fws.elf
 # IR
 vendor/lib64/hw/consumerir.default.so
 
+# Listen
+vendor/lib/libadpcmdec.so
+vendor/lib/libgcs-calwrapper.so
+vendor/lib/libgcs-ipc.so
+vendor/lib/libgcs-osal.so
+vendor/lib/libgcs.so
+vendor/lib/liblistensoundmodel2.so
+vendor/lib64/libgcs-calwrapper.so
+vendor/lib64/libgcs-ipc.so
+vendor/lib64/libgcs-osal.so
+vendor/lib64/libgcs.so
+vendor/lib64/liblistensoundmodel2.so
+
+# Listen - Hardware
+vendor/lib/hw/sound_trigger.primary.trinket.so
+vendor/lib/libcapiv2svacnn.so
+vendor/lib/libcapiv2vop.so
+vendor/lib/libsmwrapper.so
+vendor/lib64/hw/sound_trigger.primary.trinket.so
+vendor/lib64/libcapiv2svacnn.so
+vendor/lib64/libcapiv2vop.so
+
 # NFC - from LA.UM.9.11.r1-02200-NICOBAR.0
 vendor/bin/nqnfcinfo|27ac08e5a75a9e8ec57eeb2fb6ca5bc9995d3134
 vendor/lib/libsn100u_fw.so|987e60b447aa289402bfe120591b8ab9b5e4454e

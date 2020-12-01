@@ -46,6 +46,9 @@ on boot
     chown system system /sys/bus/platform/devices/soc/soc:fpc1020/fingerdown_wait
     chown system system /sys/bus/platform/devices/soc/soc:fpc1020/hw_reset
 
+on post-fs
+    mount none /dev/null /vendor/etc/permissions/android.hardware.wifi.aware.xml bind
+
 on boot && property:ro.product.device=ginkgo
     stop nqnfcinfo
     stop nqnfc_2_0_hal_service

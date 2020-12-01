@@ -2,6 +2,7 @@
 af.fast_track_multiplier=1
 audio.deep_buffer.media=true
 audio.offload.min.duration.secs=30
+persist.bluetooth.a2dp_offload.disabled=false
 persist.vendor.audio.fluence.audiorec=true
 persist.vendor.audio.fluence.speaker=true
 persist.vendor.audio.fluence.voicecall=true
@@ -9,6 +10,7 @@ persist.vendor.audio.fluence.voicecomm=true
 persist.vendor.audio.fluence.voicerec=true
 persist.vendor.audio.ras.enabled=false
 ro.af.client_heap_size_kbyte=7168
+ro.bluetooth.a2dp_offload.supported=true
 ro.config.media_vol_steps=25
 ro.config.vc_call_vol_steps=7
 ro.vendor.audio.sdk.fluencetype=fluence

@@ -19,6 +19,7 @@
 #include "power-common.h"
 
 #define DT2W_NODE "/sys/touchpanel/double_tap"
+#define BATTERY_SAVER_NODE "/sys/module/battery_saver/parameters/enabled"
 
 namespace aidl {
 namespace android {
@@ -45,7 +46,7 @@ bool setDeviceSpecificMode(Mode type, bool enabled) {
             ::android::base::WriteStringToFile(enabled ? "1" : "0", DT2W_NODE, true);
             return true;
         case Mode::LOW_POWER:
-            power_hint(POWER_HINT_LOW_POWER, reinterpret_cast<void*>(enabled));
+            ::android::base::WriteStringToFile(enabled ? "Y" : "N", BATTERY_SAVER_NODE, true);
             return true;
         default:
             return false;

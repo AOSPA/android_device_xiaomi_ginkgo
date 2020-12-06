@@ -75,5 +75,8 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 # Sepolicy
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
+# Vendor SPL
+VENDOR_SECURITY_PATCH := 2020-11-01
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/ginkgo/BoardConfigVendor.mk

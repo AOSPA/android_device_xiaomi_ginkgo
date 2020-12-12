@@ -40,41 +40,7 @@ on boot
     chown system system /sys/module/battery_saver/parameters/enabled
     chmod 0660 /sys/module/battery_saver/parameters/enabled
 
-on post-fs
-    mount none /dev/null /vendor/etc/permissions/android.hardware.wifi.aware.xml bind
-
-on boot && property:ro.product.device=ginkgo
-    stop nqnfcinfo
-    stop nqnfc_2_0_hal_service
-
-on property:sys.boot_completed=1
-    write /dev/stune/schedtune.prefer_idle 0
-    write /dev/stune/schedtune.boost 0
-
-#add 720p@240fps video
-on  property:vendor.camera.cpuperf.en=1
-	write /dev/stune/foreground/schedtune.prefer_idle 1
-on  property:vendor.camera.cpuperf.en=0
-	write /dev/stune/foreground/schedtune.prefer_idle 0
-
-on property:vendor.post_boot.parsed=1
-    write /dev/cpuset/background/cpus 0-1
-    write /dev/cpuset/foreground/cpus 0-3,6-7
-    write /dev/cpuset/top-app/cpus 0-7
-    write /dev/cpuset/restricted/cpus 0-3
-
-    write /dev/stune/top-app/schedtune.boost 1
-    write /dev/stune/top-app/schedtune.prefer_idle 1
-
-    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us 1000
-    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us 1000
-    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq 1420800
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 864000
-
-    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us 1000
-    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us 1000
-    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 652800
-
+    # KCAL
     chown system system /sys/devices/platform/kcal_ctrl.0/kcal_enable
     chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_enable
     chown system system /sys/devices/platform/kcal_ctrl.0/kcal
@@ -85,6 +51,17 @@ on property:vendor.post_boot.parsed=1
     chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_val
     chown system system /sys/devices/platform/kcal_ctrl.0/kcal_cont
     chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_cont
+
+on post-fs
+    mount none /dev/null /vendor/etc/permissions/android.hardware.wifi.aware.xml bind
+
+on boot && property:ro.product.device=ginkgo
+    stop nqnfcinfo
+    stop nqnfc_2_0_hal_service
+
+on property:sys.boot_completed=1
+    write /dev/stune/schedtune.prefer_idle 0
+    write /dev/stune/schedtune.boost 0
 
 service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     override

@@ -32,8 +32,8 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.device.rc",
-    src: "init.device.rc",
-    sub_dir: "init/hw",
+    name: "init.ginkgo.rc",
+    src: "init.ginkgo.rc",
+    sub_dir: "init",
     vendor: true,
 }

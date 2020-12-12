@@ -178,7 +178,7 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.device.rc
+    init.ginkgo.rc
 
 # Keylayouts
 PRODUCT_COPY_FILES += \

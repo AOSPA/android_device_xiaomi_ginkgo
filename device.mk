@@ -138,6 +138,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.voice.path.for.pcm.voip=true
 
 # Camera
+$(call inherit-product, vendor/miuicamera/config.mk)
+
 PRODUCT_PACKAGES += \
     libmedia_jni_shim
 

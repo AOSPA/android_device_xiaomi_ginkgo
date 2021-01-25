@@ -110,11 +110,6 @@ vendor/lib/libmpbase.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/libseemore.so
 vendor/lib/libSNPE.so
-vendor/lib/libsnsapi.so
-vendor/lib/libsns_device_mode_stub.so
-vendor/lib/libsnsdiaglog.so
-vendor/lib/libsns_fastRPC_util.so
-vendor/lib/libsns_low_lat_stream_stub.so
 vendor/lib/libswvdec.so
 vendor/lib/libsymphony-cpu.so
 vendor/lib/libsymphonypower.so
@@ -126,11 +121,6 @@ vendor/lib/libxiaomiAI_sensor.so
 vendor/lib/mibokeh_660_opencl.bin
 vendor/lib/miwatermark.so
 vendor/lib64/libseemore.so
-vendor/lib64/libsnsapi.so
-vendor/lib64/libsns_device_mode_stub.so
-vendor/lib64/libsnsdiaglog.so
-vendor/lib64/libsns_fastRPC_util.so
-vendor/lib64/libsns_low_lat_stream_stub.so
 vendor/lib64/libswvdec.so
 vendor/lib64/libsysmon_cdsp_skel.so
 
@@ -1418,24 +1408,9 @@ vendor/lib64/vendor.xiaomi.hardware.misys@3.0.so
 vendor/bin/nqnfcinfo|383844eea1225e99edf4e31bf58ed62ac38dda50
 vendor/lib/libsn100u_fw.so|987e60b447aa289402bfe120591b8ab9b5e4454e
 
-# Sensors
-vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
-vendor/bin/sensors.qti
-vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
-vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
-vendor/lib/libsensorcal.so
-vendor/lib/libsensorslog.so
-vendor/lib/libssc.so
-vendor/lib/libssc_default_listener.so
+# Sensor HAL
 vendor/lib/sensors.ssc.so
-vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
-vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
-vendor/lib64/libsensorcal.so
-vendor/lib64/libsensorslog.so
-vendor/lib64/libssc.so
-vendor/lib64/libssc_default_listener.so
 vendor/lib64/sensors.ssc.so
-vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
 # Sensor configs
 vendor/etc/sensors/config/bmm150_0.json
